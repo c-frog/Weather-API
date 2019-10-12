@@ -6,10 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet"><body>
+<!-- HEADER -->
+<div class="header"> 
+    <h1>Weather Dashboard</h1>
+    </div>
+    
+<div class="main-content">
+        <!-- SEARCH BAR AND SEARCH HISTORY -->
+    <div class="col1">
+        <p>Search for a City<p>
+        <input type="search" id="inputCity"><button type="submit" id="citySearch">SEARCH</button>
+        <ol>Search history
+            <li>One</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+    </div>
 
-</head>
-<body>
+    <div class="col2">
+        <div class="city-data">
+            <h3 id="cityName">CityName (Date)</h3>
+            <p id="cityTemp">Temperature:</p><br>
+            <p id="cityHum">Humidity:</p><br>
+            <p id="windSpeed">Wind Speed:</p><br>
+            <p id="uvIndex">UV Index:</p> 
+        </div>
+        
+        <div class="forecast-container">
+                <p id="fcHeader">5-Day Forecast</p>
+                
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <h3>Card 1</h3>
+                        <p>Emoji</p>
+                        <p class="forecasts" id="temp1">Some text</p>
+                        <p class="forecasts" id="hum1">Some text</p>
+                        </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                        <h3>Card 2</h3>
+                        <p>Emoji</p>
+                        <p class="forecasts" id="temp2">Some text</p>
+                        <p class="forecasts" id="hum2">Some text</p>
+                        </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                        <h3>Card 3</h3>
+                        <p>Emoji</p>
+                        <p class="forecasts" id="temp3">Some text</p>
+                        <p class="forecasts" id="hum3">Some text</p>
+                        </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                        <h3>Card 4</h3>
+                        <p>Emoji</p>
+                        <p class="forecasts" id="temp4">Some text</p>
+                        <p class="forecasts" id="hum4">Some text</p>
+                        </div>
+                </div>
 
+                <div class="column">
+                    <div class="card">
+                        <h3>Card 5</h3>
+                        <p>Emoji</p>
+                        <p class="forecasts" id="temp5">Some text</p>
+                        <p class="forecasts" id="hum5">Some text</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

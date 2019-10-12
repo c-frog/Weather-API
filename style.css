@@ -1,0 +1,91 @@
+body {
+    margin: 0 auto;
+    margin-top: 0%;
+    letter-spacing: .05em;
+    font-family: 'Raleway', sans-serif;
+}
+/* HEADER */
+.header {
+    background: #313131;
+    margin: 0% 0% 0% 0%;
+    height: 3em;
+}
+    .header h1 {
+        text-align: center;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        color: white;
+        padding-top: 1%;
+        font-weight: 500;
+    }
+/* CONTENT */
+.main-content {
+    display: inline-flex;
+    width: 100%;
+}
+/* SEARCH AND HISTORY  */
+.col1 {
+    padding: .6%;
+    background-color: lightgrey;
+    }
+    .col1 p {
+        margin: 0;
+        font-weight: 600;
+    }
+/* CURRENT AND FORECAST */
+.col2 {
+    width: 100%;
+}
+    /* CURRENT */
+        .city-data {
+            border: .5px grey solid;
+            border-radius: 3px;
+            margin: 1.5% 1% 1% 2%;
+            padding: 2% 0% 3% 2%;
+        }
+            #cityName{
+                font-size: 14pt;
+                margin-top: 0%;
+                margin-bottom: 2%;
+                font-weight: 600;
+            }
+            .city-data p {
+                margin: 0%;
+                line-height: .5em;
+                font-size: 10pt;
+            }
+        /* FORECAST CARDS */
+        .forecast-container {
+            margin: 2%;
+        } 
+        .card {
+            background-color: dodgerblue;
+            border-radius: 4px;
+            padding-left: 10px;
+        }
+        #fcHeader {
+            font-weight: 600
+        }
+        .column {
+            float: left;
+            width: 15%;
+            padding: 0 10px;
+        }
+            .row {
+                margin: 0 -5px;
+            }
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 600px) {
+                .column {
+                    widows: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+            .forecasts {
+                font-size: 10pt
+            }
