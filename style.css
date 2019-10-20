@@ -41,7 +41,7 @@ body {
     }
     .col1 li {
         list-style: none;
-        border: 0.1px solid black;
+        border: 0.1px solid lightgrey;
         line-height: 3em;
         text-align: center;
         background: white;
@@ -79,6 +79,7 @@ body {
             float: left;
             width: 103%;
             height: 12em;
+            color: white;
         }
         #fcHeader {
             font-weight: 600
