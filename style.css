@@ -8,7 +8,7 @@ body {
 .header {
     background: #313131;
     margin: 0% 0% 0% 0%;
-    height: 3em;
+    height: 5em;
 }
     .header h1 {
         text-align: center;
@@ -17,6 +17,7 @@ body {
         color: white;
         padding-top: 1%;
         font-weight: 500;
+        font-size: 30pt;
     }
 /* CONTENT */
 .main-content {
@@ -27,14 +28,27 @@ body {
 .col1 {
     padding: .6%;
     background-color: lightgrey;
+    width: 25%;
     }
     .col1 p {
         margin: 0;
         font-weight: 600;
+        padding-left: 4%;
+        padding-bottom: 1%;
+    }
+    #searchHistory {
+        padding: 3%;
+    }
+    .col1 li {
+        list-style: none;
+        border: 0.1px solid black;
+        line-height: 3em;
+        text-align: center;
+        background: white;
     }
 /* CURRENT AND FORECAST */
 .col2 {
-    width: 100%;
+    width: 82%;
 }
     /* CURRENT */
         .city-data {
@@ -62,6 +76,9 @@ body {
             background-color: dodgerblue;
             border-radius: 4px;
             padding-left: 10px;
+            float: left;
+            width: 103%;
+            height: 12em;
         }
         #fcHeader {
             font-weight: 600
@@ -73,6 +90,8 @@ body {
         }
             .row {
                 margin: 0 -5px;
+                display: flex;
+                justify-content: space-around;
             }
             .row::after {
                 content: "";
