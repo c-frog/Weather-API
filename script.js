@@ -130,7 +130,4 @@ function render() {
 }
 
 $("#citySearch").click(render);
-
-
-
 $(document).ready(render())
